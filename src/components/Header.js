@@ -6,6 +6,7 @@ const Header  = () => {
     <>
  
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div className='container'>
   <Link className="navbar-brand" to="/">
     <FaCocktail color="blue"></FaCocktail>
     Cocktail Website
@@ -15,9 +16,6 @@ const Header  = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul className="navbar-nav ms-auto mb-2 mt-lg-0">
-      <li className="nav-item active">
-        <Link className="nav-link" to="/about">About <span className="sr-only"></span></Link>
-       </li>
       {/* <li className="nav-item">
         <Link className="nav-link" to="/contact">Contact</Link>
       </li>
@@ -25,6 +23,7 @@ const Header  = () => {
         <Link className="nav-link" to="/help">Help</Link>
       </li> */} */
     </ul>
+  </div>
   </div>
 </nav>
 

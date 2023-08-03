@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import { useState,useEffect } from 'react';
 import{Link,useParams} from "react-router-dom";
 import { fetchSingleCocktails } from '../redux/features/cocktailSlice';
@@ -59,7 +59,7 @@ const ProductDetails = () => {
         {loading ? (
           <SpinnerAnim />
         ) : (
-          <Layout>
+
             <div className="container mt-4">
               <Link to="/" className="btn btn-info">
                 GO BACK
@@ -68,7 +68,7 @@ const ProductDetails = () => {
                 <div className="col-md-5">
                   <img src={img} alt={name} height={300} width={400} />
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 text-color:green">
                   <h2>Name : {name}</h2>
                   <p className="mt-1">Category : {category}</p>
                   <p>Info : {info}</p>
@@ -77,7 +77,7 @@ const ProductDetails = () => {
                 </div>
               </div>
             </div>
-          </Layout>
+          
         )}
       </>
     );

@@ -4,7 +4,8 @@ import { useDispatch,useSelector } from "react-redux";
 import { fetchCocktails } from '../redux/features/cocktailSlice';
 import SpinnerAnim from "../components/shared/SpinnerAnim";
 import { Link } from "react-router-dom";
-import SearchBox from "../components/SearchBox";
+// import ThemeToggler from "../components/ThemeToggler";
+// import SearchBox from "../components/SearchBox";
 const HomePage = () => {
      const[modifiedCocktails,setmodifiedCocktails]=useState([])
   const{loading,cocktails,error}=useSelector(state=>({...state.app}))
@@ -43,7 +44,6 @@ const HomePage = () => {
    }
 
   return (
-    <Layout>
     <div className="container">
     <div className="row">
      {modifiedCocktails.map((item) => (
@@ -63,7 +63,6 @@ const HomePage = () => {
         ))}
       </div>
     </div>
-  </Layout>
 );
 };
 

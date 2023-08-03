@@ -20,7 +20,7 @@ const SearchBox = () => {
 <form onSubmit={handleSubmit} onChange={handleChange}>
   <div className="mb-3">
     <label htmlFor="exampleInputEmail1" className="form-label"></label>
-    <input type="email" ref={searchTerm} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search Here" style={{width:"300px"}} />
+    <input type="email" ref={searchTerm}  onChange={handleChange} className="form-control" aria-describedby="emailHelp" placeholder="Search Here" style={{width:"300px"}} />
     <div id="emailHelp" className="form-text"></div>
   </div>
 </form>
@@ -30,4 +30,4 @@ const SearchBox = () => {
   )
   }
 
-export default SearchBox
+export default SearchBox;
